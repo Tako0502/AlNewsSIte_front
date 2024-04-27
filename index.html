@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalanews</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/mdb.lite.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/tom-select.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="dala-news-site">
+    <header>
+        <div class="container d-none d-md-block">
+            <div class="row top-section">
+                <div class="weather-section col-4 text-left">
+                    <select id="city" autocomplete="off">
+                        <option selected><strong>Almaty</strong>
+                            <span>8°</span>
+                        </option>
+                        <option><strong>Almadwwadaty</strong>
+                            <span>8°</span>
+                        </option>
+                        <option><strong>Almdawdawaty</strong>
+                            <span>8°</span>
+                        </option>
+                        <option><strong>Almscefdaty</strong>
+                            <span>8°</span>
+                        </option>
+                    </select>
+                </div>
+                <div class="site-logo-section col-4 text-center">
+                    <img src="https://alnews.kz/build/images/65059b1d4e646dc8cb36bcc3_alnews.svg" alt="">
+                </div>
+                <div class="exchange-value col-4 ">
+                    <ul class="d-exchange-rate list-group list-group-horizontal d-flex justify-content-end">
+                        <li class="mx-2"><i class="fa-solid fa-dollar-sign"></i> <span>456.09</span></li>
+                        <li class="mx-2"><i class="fa-solid fa-solid fa-euro-sign"></i> <span>500.15</span></li>
+                        <li class="mx-2"><i class="fa-solid fa-ruble-sign"></i><span>5</span></li>
+                        <li class="mx-2"><i class=" fa-solid fa-magnifying-glass fa-xl" style="color: black;"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class=" navbar-expand-lg  scrolling-navbar ">
+            <div class="container">
+                <div class="row alnews-nav-bar d-flex d-md-none p-4">
+                    <div class="col-3"> <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button></div>
+                    <div class="col-6 "> <a class="navbar-brand site-logo-section" href="#"><img
+                                src="https://alnews.kz/build/images/65059b1d4e646dc8cb36bcc3_alnews.svg" alt=""></a>
+                    </div>
+                    <div class="col-3  ">
+
+                        <div class="btn-group language-selection d-md-none m-0">
+                            <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Қаз
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end slide-top">
+                                <li>
+                                    <a data-language="kz" rel="qar-static-text" class="dropdown-item " href="#">
+                                        <img src="/images/flag/kz.png" alt="">
+                                        Қазақша
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-language="ru" rel="qar-static-text" class="dropdown-item " href="#">
+                                        <img src="/images/flag/ru.png" alt="">
+                                        Русский
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-language="en" rel="qar-static-text" class="dropdown-item " href="#">
+                                        <img src="/images/flag/us.png" alt="">
+                                        English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-language="tr" rel="qar-static-text" class="dropdown-item " href="#">
+                                        <img src="/images/flag/tr.png" alt="">
+                                        Türkçe
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-language="zh-CN" rel="qar-static-text" class="dropdown-item " href="#">
+                                        <img src="/images/flag/cn.png" alt="">
+                                        简体中文
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="collapse navbar-collapse justify-content-between alnews-hidden-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item nav-title">
+                            <a class="nav-link" href="#home">Қоғам
+                            </a>
+                        </li>
+                        <li class="nav-item nav-title">
+                            <a class="nav-link" href="#about" data-offset="100">Экономика</a>
+                        </li>
+                        <li class="nav-item nav-title">
+                            <a class="nav-link" href="#room" data-offset="100">Саясат</a>
+                        </li>
+                        <li class="nav-item nav-title">
+                            <a class="nav-link" href="#facilities" data-offset="100">Әлем</a>
+                        </li>
+                        <li class="nav-item nav-title">
+                            <a class="nav-link" href="#offers" data-offset="100">Сарап</a>
+                        </li>
+                        <li class="nav-item nav-title">
+                            <a class="nav-link" href="#reservation" data-offset="100">Аймақ</a>
+                        </li>
+                        <li class="nav-item nav-title">
+                            <a class="nav-link" href="#reservation" data-offset="100">Almaty+</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav nav-flex-icons lang-calture d-none d-md-flex">
+                        <li class="nav-item">
+                            <a class="nav-link pl-0">
+                                KAZ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pl-0">
+                                ENG
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pl-0">
+                                RU
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pl-0">
+                                TUR
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pl-0">
+                                中文
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="category-title col-12">
+                    <span>Almaty+</span>
+                </div>
+            </div>
+            <div class="row main-news-part">
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="card">
+                        <a href="news-view.html">
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="	https://alnews.kz/cache/imagine/300x170/uploads/news/2024/04/08/661425381c3ec068981957.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </a>
+                        <div class="card-body p-0 pt-1">
+                            <span class="category-card-data">19 жел 2023 00:00</span>
+                            <a href="news-view.html" class="card-title">Балалар - біздің болашағымыз</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="card">
+                        <a href="news-view.html">
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="	https://alnews.kz/cache/imagine/300x170/uploads/news/2024/04/08/661425381c3ec068981957.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </a>
+                        <div class="card-body p-0 pt-1">
+                            <span class="category-card-data">19 жел 2023 00:00</span>
+                            <a href="news-view.html" class="card-title">Балалар - біздің болашағымыз</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="card">
+                        <a href="news-view.html">
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="	https://alnews.kz/cache/imagine/300x170/uploads/news/2024/04/08/661425381c3ec068981957.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </a>
+                        <div class="card-body p-0 pt-1">
+                            <span class="category-card-data">19 жел 2023 00:00</span>
+                            <a href="news-view.html" class="card-title">Балалар - біздің болашағымыз</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="card">
+                        <a href="news-view.html">
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="	https://alnews.kz/cache/imagine/300x170/uploads/news/2024/04/08/661425381c3ec068981957.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </a>
+                        <div class="card-body p-0 pt-1">
+                            <span class="category-card-data">19 жел 2023 00:00</span>
+                            <a href="news-view.html" class="card-title">Балалар - біздің болашағымыз</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="card">
+                        <a href="news-view.html">
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="	https://alnews.kz/cache/imagine/300x170/uploads/news/2024/04/08/661425381c3ec068981957.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </a>
+                        <div class="card-body p-0 pt-1">
+                            <span class="category-card-data">19 жел 2023 00:00</span>
+                            <a href="news-view.html" class="card-title">Балалар - біздің болашағымыз</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="card">
+                        <a href="news-view.html">
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="	https://alnews.kz/cache/imagine/300x170/uploads/news/2024/04/08/661425381c3ec068981957.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </a>
+                        <div class="card-body p-0 pt-1">
+                            <span class="category-card-data">19 жел 2023 00:00</span>
+                            <a href="news-view.html" class="card-title">Балалар - біздің болашағымыз</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="card">
+                        <a href="news-view.html">
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="	https://alnews.kz/cache/imagine/300x170/uploads/news/2024/04/08/661425381c3ec068981957.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </a>
+                        <div class="card-body p-0 pt-1">
+                            <span class="category-card-data">19 жел 2023 00:00</span>
+                            <a href="news-view.html" class="card-title">Балалар - біздің болашағымыз</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="card">
+                        <a href="news-view.html">
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="	https://alnews.kz/cache/imagine/300x170/uploads/news/2024/04/08/661425381c3ec068981957.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </a>
+                        <div class="card-body p-0 pt-1">
+                            <span class="category-card-data">19 жел 2023 00:00</span>
+                            <a href="news-view.html" class="card-title">Балалар - біздің болашағымыз</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="card">
+                        <a href="news-view.html">
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="	https://alnews.kz/cache/imagine/300x170/uploads/news/2024/04/08/661425381c3ec068981957.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </a>
+                        <div class="card-body p-0 pt-1">
+                            <span class="category-card-data">19 жел 2023 00:00</span>
+                            <a href="news-view.html" class="card-title">Балалар - біздің болашағымыз</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="card">
+                        <a href="news-view.html">
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="	https://alnews.kz/cache/imagine/300x170/uploads/news/2024/04/08/661425381c3ec068981957.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </a>
+                        <div class="card-body p-0 pt-1">
+                            <span class="category-card-data">19 жел 2023 00:00</span>
+                            <a href="news-view.html" class="card-title">Балалар - біздің болашағымыз</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="card">
+                        <a href="news-view.html">
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="	https://alnews.kz/cache/imagine/300x170/uploads/news/2024/04/08/661425381c3ec068981957.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </a>
+                        <div class="card-body p-0 pt-1">
+                            <span class="category-card-data">19 жел 2023 00:00</span>
+                            <a href="news-view.html" class="card-title">Балалар - біздің болашағымыз</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="card">
+                        <a href="news-view.html">
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="	https://alnews.kz/cache/imagine/300x170/uploads/news/2024/04/08/661425381c3ec068981957.jpg"
+                                    alt="Card image cap">
+                            </div>
+                        </a>
+                        <div class="card-body p-0 pt-1">
+                            <span class="category-card-data">19 жел 2023 00:00</span>
+                            <a href="news-view.html" class="card-title">Балалар - біздің болашағымыз</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer alnews-footer text-center text-md-left pt-4">
+        <div class="container">
+            <div class="row text-center text-md-left mt-3 toper-section">
+                <div class="col-4 footer-logo-part">
+                    <img src="https://alnews.kz/build/images/6505aaf783c5a81eceb0894f_allnews-gray.svg" alt="">
+                </div>
+                <div class="col-4 social-media-part">
+                    <button type="button" class="btn p-0 waves-effect waves-light"><i
+                            class="fab fa-facebook-f fa-xl"></i></button>
+                    <button type="button" class="btn p-0 waves-effect waves-light"><i
+                            class="fab fa-instagram fa-xl"></i></button>
+                    <button type="button" class="btn p-0 waves-effect waves-light"><i
+                            class="fab fa-twitter fa-xl"></i></button>
+                    <button type="button" class="btn p-0 waves-effect waves-light"><i
+                            class="fas fa-paper-plane fa-xl"></i></button>
+                    <button type="button" class="btn p-0 waves-effect waves-light"><i
+                            class="fab fa-youtube fa-xl"></i></button>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row site-info-part">
+                <div class="col-3 d-flex justify-content-start">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-start">
+                            <strong>+7 (727) 293 08 12</strong>
+                        </div>
+                        <div class="col-12 d-flex justify-content-start">
+                            <span>Бас директор</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 d-flex justify-content-start">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-start">
+                            <strong> <a href="mailto:alatayaqparat@mail.ru">alatayaqparat@mail.ru</a></strong>
+                        </div>
+                        <div class="col-12 d-flex justify-content-start">
+                            <span>
+                                Өтініштер үшін
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 d-flex justify-content-start">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-start">
+                            <strong> <a href="mailto:alatayaqparat@mail.ru">alatayaqparat@mail.ru</a></strong>
+                        </div>
+                        <div class="col-12 d-flex justify-content-start">
+                            <span>
+                                Ынтымақтастық үшін
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="place-holder-part">
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/mdb.lite.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/tom-select.complete.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
