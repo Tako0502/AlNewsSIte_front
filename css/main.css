@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -13,6 +13,48 @@ main {
   color: #00abc2;
 }
 
+.alnews-swiper .card {
+  margin-bottom: 0;
+}
+
+.small-card-img img {
+  max-width: 100%;
+}
+
+.expert-opinion-part>.col-12 {
+  border-bottom: 1px solid #d3faff;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.expert-opinion-part>.col-12:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.small-card-section>.row {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.small-card-section:last-child {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.border-tr {
+  border-bottom: 1px solid #eee;
+}
+
+.small-card:nth-child(odd) {
+  border-right: 1px solid #eee;
+}
+
+.small-card:nth-child(even) {
+  border-left: 1px solid #eee;
+}
+
 .alnews-site .exchange-value li {
   list-style: none;
 }
@@ -20,14 +62,17 @@ main {
 .alnews-site .top-section {
   margin: 1rem 0;
 }
-.weather-section .choices{
-width: auto;
-max-width: 200px;
+
+.weather-section .choices {
+  width: auto;
+  max-width: 200px;
 }
-.weather-section .choices .choices__inner{
-border: none;
-background-color: transparent;
+
+.weather-section .choices .choices__inner {
+  border: none;
+  background-color: transparent;
 }
+
 .weather-section .choices .choices__inner:selection {
   border: none;
 }
@@ -39,7 +84,7 @@ background-color: transparent;
 .weather-section .choices .choices__inner:focus {
   outline: none;
   border: none !important;
-  box-shadow: none!important;
+  box-shadow: none !important;
 }
 
 .weather-section .choices .choices__inner:selected {
@@ -89,7 +134,7 @@ background-color: transparent;
   padding-bottom: 0 !important;
 }
 
-.alnews-site .lang-calture:last-child>a {
+.alnews-site .lang-calture>li:last-child>a {
   border-right: none !important;
 }
 
@@ -149,7 +194,7 @@ background-color: transparent;
   margin-top: 3rem;
 }
 
-.alnews-site .main-news-part .card {
+.alnews-site .card {
   box-shadow: none;
   -webkit-box-shadow: none;
 }
@@ -161,7 +206,7 @@ background-color: transparent;
   font-size: 12px;
 }
 
-.alnews-site .main-news-part .card .card-body .card-title {
+.alnews-site .card .card-body .card-title {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -286,7 +331,7 @@ background-color: transparent;
   align-items: center;
 }
 
-.alnews-site .tags .tag-title {
+.alnews-site .tag-title {
   color: #687082;
   font-size: 14px;
   font-weight: 300;
@@ -436,7 +481,7 @@ background-color: transparent;
   padding-left: 0;
 }
 
-.alnews-site .content .author .author-title {
+.alnews-site .content .author-title {
   color: #687082;
   font-size: 14px;
   font-weight: 300;
@@ -448,7 +493,7 @@ background-color: transparent;
   padding-bottom: 1rem;
 }
 
-.alnews-site .content .author .author-image {
+.alnews-site .author-image {
   border-radius: 50%;
   display: block;
   margin-bottom: 10px;
@@ -458,13 +503,28 @@ background-color: transparent;
   max-width: 100%;
 }
 
-.alnews-site .content .author .author-name {
+.alnews-site .author-name {
   color: #00abc2;
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 5px;
   margin-left: 0;
   text-decoration: none;
+}
+
+.alnews-site .author-info {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.alnews-site .author-info span {
+  color: #adadad;
+  font-size: .85rem;
+}
+
+.alnews-site .author-info p {
+  color: #00abc2;
+  font-size: .85rem;
 }
 
 .alnews-site .latest-news {
@@ -502,19 +562,29 @@ background-color: transparent;
   padding: 5px 10px;
 }
 
+.alnews-site .rating-part .reaction-title {
+  color: #00abc2 !important;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
 .weather-sectiony {
   border: none;
 }
-.weather-section .choices__item{
+
+.weather-section .choices__item {
   color: #000;
-    font-size: 1rem;
-    font-weight: 500;
+  font-size: 1rem;
+  font-weight: 500;
 }
-.weather-section .choices__item--selectable{
+
+.weather-section .choices__item--selectable {
   padding-right: 0 !important;
 }
-.weather-section .primary-color{
-  color: #00abc2!important;
+
+.weather-section .primary-color {
+  color: #00abc2 !important;
 }
 
 .weather-section:selection {
@@ -629,12 +699,32 @@ background-color: transparent;
   background-color: hsla(0, 0%, 100%, .06);
   border: 2px solid #000;
   border-radius: 10px;
-  color: #5c5c5c;
+  color: #FFF;
   font-size: 16px;
   height: 50px;
   padding-left: 25px;
   text-indent: 25px;
 }
+
+.alnews-site .alnews-footer .search-input:focus {
+  background-color: #fff;
+  color: #5c5c5c !important;
+  box-shadow: none;
+  outline: 0;
+}
+
+.alnews-site .alnews-footer .search-input::placeholder {
+  color: #FFF;
+}
+
+.footer-logo-part img {
+  filter: grayscale(100%);
+}
+
+.footer-logo-part:hover img {
+  filter: none;
+}
+
 
 .alnews-site .alnews-footer .search {
   position: relative;
@@ -644,10 +734,12 @@ background-color: transparent;
   background: #5c5c5c;
   border: none;
   font-size: 16px;
+  color: #fff;
   height: 40px;
   position: absolute;
-  right: 5px;
-  top: 5px;
+  text-transform: none;
+  right: 1px;
+  top: -1px;
   width: 110px;
 }
 
@@ -668,27 +760,23 @@ background-color: transparent;
 .alnews-site .alnews-hidden-collapse {
   background-color: #00abc2;
   border-radius: 0.5rem;
-  padding: .5rem 1rem 0 1rem;
+  padding: .25rem 1rem;
 }
 
 .alnews-site .site-operation {
-  position: fixed;
   bottom: 20px;
   right: 20px;
-  display: flex;
-  flex-direction: column;
   background-color: #1f2833;
   z-index: 999;
   border-radius: 5px;
-  overflow: hidden;
   padding: 8px 0;
   gap: 8px;
   background-color: #00abc2;
   border-radius: .3rem;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
-  line-height: 40px;
-  text-align: center;
   width: 40px;
 }
 
@@ -710,6 +798,8 @@ background-color: transparent;
 
 .alnews-site .site-operation i {
   color: #fff;
+  position: absolute;
+  right: 25px;
 }
 
 .alnews-site .search-model-content input {
@@ -752,6 +842,43 @@ background-color: transparent;
   stroke-width: 30;
   transition: all 0.5s;
 }
+
+.alnews-site .news-swipper hr {
+  height: 1px;
+  color: #eee;
+  opacity: 1;
+}
+
+
+
+.alnews-site .expert-opinion-part {
+  background-color: rgba(8, 232, 222, .05);
+  border-radius: 6px;
+  box-shadow: 4px 4px 4px -3px #e6e6e6;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.alnews-site .expert-opinion-part .expert-opinion-title {
+  color: #00abc2;
+  display: block;
+  font-size: 1.06rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+
+.alnews-site .expert-opinion-part .expert-opinion-image img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+
+.alnews-site .expert-opinion-part .card-title {
+  font-size: 1rem;
+}
+
+
 
 
 @-webkit-keyframes like {

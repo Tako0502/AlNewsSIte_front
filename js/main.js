@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   let reactions = document.querySelectorAll('.reaction');
   reactions.forEach(e => {
@@ -21,3 +22,55 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const initPartnerSwiper = function () {
+    if (window.innerWidth < 768) {
+      partnerSwiper = new Swiper(".alnews-swiper", {
+        slidesPerView: 2,
+        spaceBetween: 16,
+
+        freeMode: true,
+        direction: 'horizontal',
+        loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    } else if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
+      partnerSwiper = new Swiper(".swiper", {
+        slidesPerView: 2,
+        spaceBetween: 16,
+
+        freeMode: true,
+        direction: 'horizontal',
+        loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    } else {
+      partnerSwiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        spaceBetween: 16,
+        freeMode: true,
+        direction: 'horizontal',
+        loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        //autoplay: {
+        //    delay: 3000,
+        //},
+      });
+    }
+  };
+  initPartnerSwiper();
+
+
+
+
+});
+

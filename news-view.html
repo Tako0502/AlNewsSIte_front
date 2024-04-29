@@ -4,42 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dalanews</title>
+    <title>Alnews</title>
+    <link rel="stylesheet" href="console/css/style.css" id="main-style-link">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/mdb.lite.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/backtotop.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
-
-    <link rel="icon" href="console/images/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="console/fonts/inter/inter.css" id="main-font-link" />
-    <link rel="stylesheet" href="console/fonts/tabler-icons.min.css">
-    <link rel="stylesheet" href="console/fonts/feather.css">
-    <link rel="stylesheet" href="console/fonts/material.css">
-
-    <link rel="stylesheet" href="console/css/all.min.css">
-    <link rel="stylesheet" href="console/css/style.css" id="main-style-link">
-    <link rel="stylesheet" href="console/css/style-preset.css">
-    <link rel="stylesheet" href="console/css/plugins/uppy.min.css">
-    <link rel="stylesheet" href="console/css/plugins/cropper.min.css">
-    <link rel="stylesheet" href="console/css/plugins/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="console/css/plugins/tagify.css">
-    <link rel="stylesheet" href="console/css/main.css" asp-append-version="true">
 </head>
 
 <body class="alnews-site">
     <header>
-        <div class="container d-none d-md-block">
+        <div class="container d-none d-lg-block">
             <div class="row top-section">
                 <div class="weather-section col-4 text-left">
                     <select class="form-control" data-trigger name="categoryId" id="categoryId">
-                        <option selected><strong>Almadwwadaty</strong>
+                        <option selected><strong>Almadwwadaty</strong></option>
+                        <span>
+                            8°
+                        </span>
+
+                        <option><strong>Adwwadaty</strong>
                             <span>8°</span>
                         </option>
-                        <option ><strong>Almadwwadaty</strong>
-                            <span>8°</span>
-                        </option>
-                        <option ><strong>Almadwwadaty</strong>
+                        <option><strong>Almadwwadaty</strong>
                             <span>8°</span>
                         </option>
                     </select>
@@ -48,11 +37,14 @@
                     <img src="https://alnews.kz/build/images/65059b1d4e646dc8cb36bcc3_alnews.svg" alt="">
                 </div>
                 <div class="exchange-value col-4 ">
-                    <ul id="rates" class="d-exchange-rate list-group list-group-horizontal d-flex justify-content-end">
+                    <ul class="d-exchange-rate list-group list-group-horizontal d-flex justify-content-end">
+                        <li class="mx-2"><i class="fa-solid fa-dollar-sign"></i> <span>456.09</span></li>
+                        <li class="mx-2"><i class="fa-solid fa-solid fa-euro-sign"></i> <span>500.15</span></li>
+                        <li class="mx-2"><i class="fa-solid fa-ruble-sign"></i><span>5</span></li>
                         <li class="mx-2">
                             <a rel="custom-modal" data-toggle="modal" data-target="#centralModalDangerDemo"
                                 class="search-btn">
-                                <i class="fa-regular fa-magnifying-glass search-icon" data-toggle="modal"
+                                <i class="fa-solid text-dark fa-magnifying-glass search-icon fa-xl" data-toggle="modal"
                                     data-target="#modalSearch"></i>
                             </a>
                         </li>
@@ -62,18 +54,18 @@
         </div>
         <nav class=" navbar-expand-lg  scrolling-navbar ">
             <div class="container">
-                <div class="row alnews-nav-bar d-flex d-md-none p-4">
+                <div class="row alnews-nav-bar d-flex d-lg-none ">
                     <div class="col-3"> <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <i class="fa-solid fa-bars"></i>
                         </button></div>
-                    <div class="col-6 "> <a class="navbar-brand site-logo-section" href="#"><img
-                                src="https://alnews.kz/build/images/65059b1d4e646dc8cb36bcc3_alnews.svg" alt=""></a>
+                    <div class="col-6 d-flex justify-content-center"> <a class="navbar-brand site-logo-section"
+                            href="#"><img src="https://alnews.kz/build/images/65059b1d4e646dc8cb36bcc3_alnews.svg"
+                                alt=""></a>
                     </div>
-                    <div class="col-3  ">
-
-                        <div class="btn-group language-selection d-md-none m-0">
+                    <div class="col-3 d-flex justify-content-end">
+                        <div class="btn-group language-selection d-lg-none m-0">
                             <button type="button" class=" dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Қаз
@@ -140,8 +132,15 @@
                         <li class="nav-item nav-title">
                             <a class="nav-link" href="#reservation" data-offset="100">Almaty+</a>
                         </li>
+                        <li class="nav-item nav-title d-block d-lg-none">
+                            <a rel="custom-modal nav-link" data-toggle="modal" href="#reservation" data-offset="100"
+                                data-target="#centralModalDangerDemo" class="search-btn">
+                                <i class="fa-regular fa-magnifying-glass search-icon me-2" data-toggle="modal"
+                                    data-target="#modalSearch"></i>Іздеу
+                            </a>
+                        </li>
                     </ul>
-                    <ul class="navbar-nav nav-flex-icons lang-calture d-none d-md-flex">
+                    <ul class="navbar-nav nav-flex-icons lang-calture d-none d-lg-flex">
                         <li class="nav-item">
                             <a class="nav-link pl-0">
                                 KAZ
@@ -851,6 +850,7 @@
                                     <hr>
 
                                     <div class="rating-part">
+                                        <h5 class="reaction-title">Сіздің реакцияңыз?</h5>
                                         <div class="reaction mt-2" id="like">
                                             <div class="reaction-icon"><i class="fa-light fa-heart"></i></div>
                                             <div class="reaction-name">Ұнайды</div>
@@ -879,79 +879,85 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-12 col-xl-4">
-                    <div class="row">
-                        <div class="col-12 HeaderLeatestNews  mt-3">
-                            <div class="progress_bar mb-3">
-                                <div class="latest-news text-left ml-0">
-                                    Соңғы жаңалықтар
+                    <div class="position-sticky top-0">
+                        <div class="row">
+                            <div class="col-12 HeaderLeatestNews  mt-3">
+                                <div class="progress_bar mb-3">
+                                    <div class="latest-news text-left ml-0">
+                                        Соңғы жаңалықтар
+                                    </div>
                                 </div>
+
                             </div>
-
+                        </div>
+                        <div class="row">
+                            <!-- Simple Example for copy from here-->
+                            <div class="col-2 time-part">вчера, 16:15</div>
+                            <div class="col-10">
+                                <a href="" class="link-part">Блинкен сапары Қытайға таңдаудағы қолайсыздық әкелді</a>
+                            </div>
+                            <div class="col-12 news-under-line">
+                                <hr>
+                            </div>
+                            <!-- Simple Example for copy to here-->
+                            <div class="col-2 time-part">вчера, 16:15</div>
+                            <div class="col-10">
+                                <a href="" class="link-part">Блинкен сапары Қытайға таңдаудағы қолайсыздық әкелді</a>
+                            </div>
+                            <div class="col-12 news-under-line">
+                                <hr>
+                            </div>
+                            <div class="col-2 time-part">вчера, 16:15</div>
+                            <div class="col-10">
+                                <a href="" class="link-part">Блинкен сапары Қытайға таңдаудағы қолайсыздық әкелді</a>
+                            </div>
+                            <div class="col-12 news-under-line">
+                                <hr>
+                            </div>
+                            <div class="col-2 time-part">вчера, 16:15</div>
+                            <div class="col-10">
+                                <a href="" class="link-part">Блинкен сапары Қытайға таңдаудағы қолайсыздық әкелді</a>
+                            </div>
+                            <div class="col-12 news-under-line">
+                                <hr>
+                            </div>
+                            <div class="col-2 time-part">23.04</div>
+                            <div class="col-10">
+                                <a href="" class="link-part">
+                                    Орта Азия өрісі, Кэмеронның келісі
+                                </a>
+                            </div>
+                            <div class="col-12 news-under-line">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 offset-5 d-flex justify-content-end">
+                                <button type="button" class="btn"
+                                    style="background-color: #00abc2;color: #fff;font-size: 12px;font-weight: 500;padding: 1rem 1.5rem;">Барлық
+                                    жаңалықтар <i class="fa-solid fa-chevrons-right"
+                                        style="font-size: .875rem;"></i></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <!-- Simple Example for copy from here-->
-                        <div class="col-2 time-part">вчера, 16:15</div>
-                        <div class="col-10">
-                            <a href="" class="link-part">Блинкен сапары Қытайға таңдаудағы қолайсыздық әкелді</a>
-                        </div>
-                        <div class="col-12 news-under-line">
-                            <hr>
-                        </div>
-                        <!-- Simple Example for copy to here-->
-                        <div class="col-2 time-part">вчера, 16:15</div>
-                        <div class="col-10">
-                            <a href="" class="link-part">Блинкен сапары Қытайға таңдаудағы қолайсыздық әкелді</a>
-                        </div>
-                        <div class="col-12 news-under-line">
-                            <hr>
-                        </div>
-                        <div class="col-2 time-part">вчера, 16:15</div>
-                        <div class="col-10">
-                            <a href="" class="link-part">Блинкен сапары Қытайға таңдаудағы қолайсыздық әкелді</a>
-                        </div>
-                        <div class="col-12 news-under-line">
-                            <hr>
-                        </div>
-                        <div class="col-2 time-part">вчера, 16:15</div>
-                        <div class="col-10">
-                            <a href="" class="link-part">Блинкен сапары Қытайға таңдаудағы қолайсыздық әкелді</a>
-                        </div>
-                        <div class="col-12 news-under-line">
-                            <hr>
-                        </div>
-                        <div class="col-2 time-part">23.04</div>
-                        <div class="col-10">
-                            <a href="" class="link-part">
-                                Орта Азия өрісі, Кэмеронның келісі
-                            </a>
-                        </div>
-                        <div class="col-12 news-under-line">
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-7 offset-5 d-flex justify-content-end">
-                            <button type="button" class="btn"
-                                style="background-color: #00abc2;color: #fff;font-size: 12px;font-weight: 500;padding: 1rem 1.5rem;">Барлық
-                                жаңалықтар <i class="fa-solid fa-chevrons-right"></i></button>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
-        <div class="site-operation">
-            <a href="javascript:;" class="back-to-top" style="display: block;">
-                <i class="fa-duotone fa-arrow-up-to-line"></i>
-            </a>
-        </div>
+        <a href="#" class="cd-top site-operation text-replace js-cd-top d-flex justify-content-center"><i class="fa-solid fa-up-to-line"></i></a>
     </main>
     <footer class="page-footer alnews-footer text-center text-md-left pt-4">
         <div class="container">
             <div class="row text-center text-md-left mt-3 toper-section">
+                <div class="col-12">
+                    <form action="/kk/search/" class="search form d-none d-lg-block">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control search-input"
+                            placeholder="Ештеңе таппадыңыз ба? Мұнда іздеңіз" name="search-text">
+                        <button class="btn search-submit">Іздеу</button>
+                    </form>
+                </div>
                 <div class="col-12 col-sm-6 col-md-4 footer-logo-part">
-                    <img src="https://alnews.kz/build/images/6505aaf783c5a81eceb0894f_allnews-gray.svg" alt="">
+                    <img src="images/65059b1d4e646dc8cb36bcc3_alnews.png" alt="">
                 </div>
                 <div class="col-10 offset-1 col-sm-6 col-md-4 social-media-part ">
                     <ul class="mt-2">
@@ -1022,6 +1028,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/choices.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/backtotop.js"></script>
     <script src="js/main.js"></script>
 </body>
 
