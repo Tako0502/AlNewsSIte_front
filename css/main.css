@@ -3,7 +3,7 @@
 }
 
 body {
-  /* font-family: "Roboto", Arial, sans-serif; */
+  font-family: "Roboto";
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -741,13 +741,12 @@ blockquote p {
   align-items: center;
 }
 
-.sharing-part ul {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
 
 .sharing-part:hover ul {
-  opacity: 1;
+  display: flex !important;
+}
+.sharing-part:hover .date-time {
+  display: none !important;
 }
 
 .sharing-part>ul>li {
@@ -808,6 +807,10 @@ footer .big-logo-part:hover img {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.sharing-part i:hover {
+  color: var(--main-color);
 }
 
 @media screen and (max-width:992px) {
